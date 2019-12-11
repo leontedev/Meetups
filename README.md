@@ -2,7 +2,7 @@
 
 **#100DaysOfSwiftUI Days 77-78, Challenge #5: https://www.hackingwithswift.com/guide/ios-swiftui/6/3/challenge**
 
-![](gif.gif)
+![](gif.gif) ![](gif2.gif)
 
 ## Day 77
 
