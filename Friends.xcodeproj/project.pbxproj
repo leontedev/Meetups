@@ -13,6 +13,9 @@
 		896BFE7F239EA3DF003DD4C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896BFE7E239EA3DF003DD4C1 /* Assets.xcassets */; };
 		896BFE82239EA3DF003DD4C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896BFE81239EA3DF003DD4C1 /* Preview Assets.xcassets */; };
 		896BFE85239EA3DF003DD4C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896BFE83239EA3DF003DD4C1 /* LaunchScreen.storyboard */; };
+		896BFE8D239F99DD003DD4C1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BFE8C239F99DD003DD4C1 /* ImagePicker.swift */; };
+		896BFE8F239FC496003DD4C1 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BFE8E239FC495003DD4C1 /* Contact.swift */; };
+		896BFE91239FC52A003DD4C1 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BFE90239FC52A003DD4C1 /* Contacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		896BFE81239EA3DF003DD4C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		896BFE84239EA3DF003DD4C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896BFE86239EA3DF003DD4C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896BFE8C239F99DD003DD4C1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		896BFE8E239FC495003DD4C1 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		896BFE90239FC52A003DD4C1 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				896BFE83239EA3DF003DD4C1 /* LaunchScreen.storyboard */,
 				896BFE86239EA3DF003DD4C1 /* Info.plist */,
 				896BFE80239EA3DF003DD4C1 /* Preview Content */,
+				896BFE8C239F99DD003DD4C1 /* ImagePicker.swift */,
+				896BFE8E239FC495003DD4C1 /* Contact.swift */,
+				896BFE90239FC52A003DD4C1 /* Contacts.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -147,6 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				896BFE79239EA3DC003DD4C1 /* AppDelegate.swift in Sources */,
+				896BFE8D239F99DD003DD4C1 /* ImagePicker.swift in Sources */,
+				896BFE91239FC52A003DD4C1 /* Contacts.swift in Sources */,
+				896BFE8F239FC496003DD4C1 /* Contact.swift in Sources */,
 				896BFE7B239EA3DC003DD4C1 /* SceneDelegate.swift in Sources */,
 				896BFE7D239EA3DC003DD4C1 /* ContentView.swift in Sources */,
 			);
