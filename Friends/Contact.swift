@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct Contact: Codable, Hashable, Comparable {
     static func < (lhs: Contact, rhs: Contact) -> Bool {
@@ -15,6 +16,8 @@ struct Contact: Codable, Hashable, Comparable {
     
     let id: UUID
     let name: String
+    let lat: Double?
+    let long: Double?
 }
 
 

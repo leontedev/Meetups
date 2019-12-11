@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
     @State private var showingImagePicker = false
@@ -14,6 +15,7 @@ struct ContentView: View {
     @State private var showingNameInput = false
     @State private var fullName: String = ""
     @ObservedObject var contacts = Contacts()
+    let locationFetcher = LocationFetcher()
     
     var body: some View {
         NavigationView {
@@ -37,8 +39,20 @@ struct ContentView: View {
                             Spacer()
                                 
                             Button(action: {
+                                self.locationFetcher.start()
+                                var lat: Double?
+                                var long: Double?
+                                
+                                if let location = self.locationFetcher.lastKnownLocation {
+                                    lat = location.latitude
+                                    long = location.longitude
+                                    print("Your location is \(location)")
+                                } else {
+                                    print("Your location is unknown")
+                                }
+                                
                                 let newUUID = UUID()
-                                let newContact = Contact(id: newUUID, name: self.fullName)
+                                let newContact = Contact(id: newUUID, name: self.fullName, lat: lat, long: long)
                                 self.contacts.contacts.append(newContact)
                                 
                                 self.contacts.images[newUUID] = self.lastImage
@@ -62,9 +76,16 @@ struct ContentView: View {
                     }
                     ForEach(contacts.contacts.sorted(), id: \.self) { contact in
                         NavigationLink(destination:
-                            Image(uiImage: self.contacts.images[contact.id]!)
-                                .resizable()
-                                .scaledToFit()
+                            
+                            VStack {
+                                Image(uiImage: self.contacts.images[contact.id]!)
+                                    .resizable()
+                                    .scaledToFit()
+                                
+                                if contact.lat != nil {
+                                    MapView(centerCoordinate: CLLocationCoordinate2D(latitude: contact.lat!, longitude: contact.long!))
+                                }
+                            }
                             ) {
                             HStack {
                                 Image(uiImage: self.contacts.images[contact.id]!)

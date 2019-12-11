@@ -16,6 +16,8 @@
 		896BFE8D239F99DD003DD4C1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BFE8C239F99DD003DD4C1 /* ImagePicker.swift */; };
 		896BFE8F239FC496003DD4C1 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BFE8E239FC495003DD4C1 /* Contact.swift */; };
 		896BFE91239FC52A003DD4C1 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BFE90239FC52A003DD4C1 /* Contacts.swift */; };
+		896BFE9323A0F60B003DD4C1 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BFE9223A0F60B003DD4C1 /* LocationFetcher.swift */; };
+		896BFE9523A0F8EE003DD4C1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BFE9423A0F8EE003DD4C1 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		896BFE8C239F99DD003DD4C1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		896BFE8E239FC495003DD4C1 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		896BFE90239FC52A003DD4C1 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		896BFE9223A0F60B003DD4C1 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		896BFE9423A0F8EE003DD4C1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +74,10 @@
 				896BFE86239EA3DF003DD4C1 /* Info.plist */,
 				896BFE80239EA3DF003DD4C1 /* Preview Content */,
 				896BFE8C239F99DD003DD4C1 /* ImagePicker.swift */,
+				896BFE9223A0F60B003DD4C1 /* LocationFetcher.swift */,
 				896BFE8E239FC495003DD4C1 /* Contact.swift */,
 				896BFE90239FC52A003DD4C1 /* Contacts.swift */,
+				896BFE9423A0F8EE003DD4C1 /* MapView.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -156,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				896BFE79239EA3DC003DD4C1 /* AppDelegate.swift in Sources */,
+				896BFE9523A0F8EE003DD4C1 /* MapView.swift in Sources */,
 				896BFE8D239F99DD003DD4C1 /* ImagePicker.swift in Sources */,
 				896BFE91239FC52A003DD4C1 /* Contacts.swift in Sources */,
+				896BFE9323A0F60B003DD4C1 /* LocationFetcher.swift in Sources */,
 				896BFE8F239FC496003DD4C1 /* Contact.swift in Sources */,
 				896BFE7B239EA3DC003DD4C1 /* SceneDelegate.swift in Sources */,
 				896BFE7D239EA3DC003DD4C1 /* ContentView.swift in Sources */,
