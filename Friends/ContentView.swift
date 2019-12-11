@@ -49,7 +49,8 @@ struct ContentView: View {
                                 self.showingNameInput = false
                             }) {
                                 Text("Save")
-                                    .accentColor(Color.white)
+                                    .foregroundColor(.white)
+                                    .fontWeight(.bold)
                                     .padding()
                                     .background(Color.red)
                                     .cornerRadius(10)
